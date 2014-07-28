@@ -8,22 +8,8 @@
 		<artifactId>template-parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>template-application</artifactId>
+	<artifactId>template-domain</artifactId>
 	<packaging>jar</packaging>
-	<name>template-application</name>
+	<name>template-domain</name>
 	<url>http://maven.apache.org</url>
-	<dependencies>
-		<dependency>
-			<groupId>it.ms.template</groupId>
-			<artifactId>template-domain</artifactId>
-			<version>${project.version}</version>
-			<type>jar</type>
-		</dependency>
-		<dependency>
-			<groupId>it.ms.template</groupId>
-			<artifactId>template-infrastructure</artifactId>
-			<version>${project.version}</version>
-			<type>jar</type>
-		</dependency>
-	</dependencies>
 </project>

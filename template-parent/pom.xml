@@ -15,6 +15,7 @@
 		<module>template-application</module>
 		<module>template-infrastructure</module>
 		<module>template-presentation</module>
+		<module>template-domain</module>
 	</modules>
 
 	<properties>

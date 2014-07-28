@@ -1,4 +1,4 @@
-package it.ms.template.application;
+package it.ms.template.presentation;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
