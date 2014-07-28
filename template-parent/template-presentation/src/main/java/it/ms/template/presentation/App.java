@@ -1,15 +1,26 @@
 package it.ms.template.presentation;
 
+import it.ms.template.presentation.config.RootApplicationConfig;
+import it.ms.template.template_parent.main.MainSupport;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 
 @ComponentScan
 @EnableAutoConfiguration
-public class App {
+public class App extends MainSupport {
 
-	public static void main(String[] args) {
+	public App(String[] args) {
+		super(args);
+	}
 
-		SpringApplication.run(App.class, args);
+	public static void main(String[] args) throws Exception {
+		new App(args);
+	}
+
+	@Override
+	public void initContext() throws Exception {
+		SpringApplication.run(RootApplicationConfig.class);
 	}
 }
