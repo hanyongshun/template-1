@@ -1,7 +1,5 @@
 package it.ms.template.presentation.config;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.Bean;
@@ -20,8 +18,6 @@ import com.fasterxml.jackson.datatype.joda.JodaModule;
 @ComponentScan("it.ms.template.presentation")
 @Import({ SwaggerConfig.class })
 public class RootApplicationConfig extends WebMvcConfigurerAdapter {
-
-	private static final Logger logger = LoggerFactory.getLogger(RootApplicationConfig.class);
 
 	@Autowired
 	private Environment environment;
