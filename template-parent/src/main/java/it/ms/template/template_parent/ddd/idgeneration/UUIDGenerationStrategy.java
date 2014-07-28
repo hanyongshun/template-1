@@ -5,7 +5,7 @@ import java.util.UUID;
 import org.springframework.stereotype.Component;
 
 @Component
-public class UUIDGenerationStrategy implements IDGenerationStrategy {
+public final class UUIDGenerationStrategy implements IDGenerationStrategy {
 
 	@Override
 	public String get() {
