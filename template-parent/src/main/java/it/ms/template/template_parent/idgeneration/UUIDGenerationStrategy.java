@@ -1,6 +1,4 @@
-package it.ms.template.template_parent.ddd.idgeneration;
-
-import java.util.UUID;
+package it.ms.template.template_parent.idgeneration;
 
 import org.springframework.stereotype.Component;
 
@@ -10,6 +8,6 @@ public final class UUIDGenerationStrategy implements IDGenerationStrategy {
 	@Override
 	public String get() {
 
-		return UUID.randomUUID().toString();
+		return new com.eaio.uuid.UUID().toString();
 	}
 }

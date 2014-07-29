@@ -1,4 +1,4 @@
-package it.ms.template.template_parent.ddd.idgeneration;
+package it.ms.template.template_parent.idgeneration;
 
 import java.util.function.Supplier;
 
