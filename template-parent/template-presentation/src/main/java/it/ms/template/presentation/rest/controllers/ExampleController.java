@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @org.springframework.stereotype.Controller
 @RequestMapping("api/")
-public class ExampleController {
+public class ExampleController extends Controller{
 
 	private static final String TEMPLATE = "Hello, %s!";
 
