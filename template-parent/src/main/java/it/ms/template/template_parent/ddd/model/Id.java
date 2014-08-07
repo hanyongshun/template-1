@@ -1,10 +1,12 @@
 package it.ms.template.template_parent.ddd.model;
 
+import java.util.UUID;
+
 public abstract class ID extends ValueObject {
 
-	private final String value;
+	private final UUID value;
 
-	protected ID(final String value) {
+	protected ID(final UUID value) {
 
 		this.value = value;
 	}
@@ -15,7 +17,7 @@ public abstract class ID extends ValueObject {
 		this.value = null;
 	}
 
-	protected String value() {
+	protected UUID value() {
 
 		return value;
 	}
